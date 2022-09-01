@@ -1,4 +1,4 @@
-# Docker
+https://github.com/ikilic/run-devops/blob/main/azure-pipelines.yml# Docker
 # Build and push an image to Azure Container Registry
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
@@ -34,6 +34,6 @@ stages:
         command: buildAndPush
         repository: $(imageRepository)
         dockerfile: $(dockerfilePath)
-        containerRegistry: $(dockerRegistryServiceConnection)
+        containerRegistry: $(dockerRegistryServiceConnection)/Shopping
         tags: |
           $(tag)
